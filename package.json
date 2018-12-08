@@ -5,7 +5,9 @@
   "main": "src/index.jsx",
   "scripts": {
     "build": "webpack --config webpack.prod.js",
-    "dev": "webpack-dev-server --hot --config webpack.dev.js"
+    "dev": "webpack-dev-server --hot --config webpack.dev.js",
+    "format": "prettier --write **/*.jsx **/*.js **/*.css",
+    "lint": "eslint **/*.jsx **/*.js"
   },
   "keywords": [],
   "author": "",
@@ -14,8 +16,30 @@
     "@babel/core": "^7.2.0",
     "@babel/preset-env": "^7.2.0",
     "@babel/preset-react": "^7.0.0",
+    "autoprefixer": "^9.4.2",
     "babel-loader": "^8.0.4",
+    "babel-plugin-react-css-modules": "^5.0.0",
+    "babel-plugin-styled-components": "^1.9.2",
     "copy-webpack-plugin": "^4.6.0",
+    "css-loader": "^2.0.0",
+    "cssnano": "^4.1.7",
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-prettier": "^3.3.0",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "file-loader": "^2.0.0",
+    "postcss-flexbugs-fixes": "^4.1.0",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.4.0",
+    "prettier": "^1.15.3",
+    "style-loader": "^0.23.1",
+    "stylelint": "^9.9.0",
+    "stylelint-config-prettier": "^4.0.0",
+    "stylelint-config-standard": "^18.2.0",
+    "url-loader": "^1.1.2",
     "webpack": "^4.27.1",
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.10",
@@ -23,7 +47,10 @@
   },
   "dependencies": {
     "@babel/polyfill": "^7.0.0",
+    "@material-ui/core": "^3.6.1",
     "react": "^16.6.3",
-    "react-dom": "^16.6.3"
+    "react-dom": "^16.6.3",
+    "styled-components": "^4.1.2",
+    "typeface-roboto": "0.0.54"
   }
 }
